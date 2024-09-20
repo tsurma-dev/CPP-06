@@ -1,6 +1,5 @@
 {
 	"files.associations": {
-		"limits": "cpp",
 		"array": "cpp",
 		"atomic": "cpp",
 		"bit": "cpp",
@@ -39,6 +38,7 @@
 		"iosfwd": "cpp",
 		"iostream": "cpp",
 		"istream": "cpp",
+		"limits": "cpp",
 		"new": "cpp",
 		"numbers": "cpp",
 		"ostream": "cpp",
