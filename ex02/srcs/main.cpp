@@ -1,4 +1,3 @@
-
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
@@ -60,4 +59,14 @@ int main(void) {
 	B* bee = new B();
 	identify(*bee);
 	delete bee;
+	Base* ptrs[10];
+	for (int i = 0; i < 10; ++i)
+		ptrs[i] = generate();
+	for (int i = 0; i < 10; ++i)
+		identify( ptrs[i] );
+	for (int i = 0; i < 10; ++i)
+		identify( *ptrs[i] );
+	for (int i = 0; i < 10; ++i)
+		delete ptrs[i];
+
 }
