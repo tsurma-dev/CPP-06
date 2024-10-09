@@ -76,6 +76,7 @@ static void convertFromChar ( char c ) {
 	else
 		std::cout << "char:\tNon displayable\n";
 	std::cout << "int:\t" << static_cast<int>(c) << "\n";
+	std::cout.precision(0);
 	std::cout << std::fixed << "float:\t" << static_cast<float>(c) << ".0f\n";
 	std::cout << std::fixed << "double:\t" << static_cast<double>(c) << ".0" << std::endl;
 }
@@ -87,6 +88,7 @@ static void convertFromInt( int i ) {
 		std::cout << "char:\t'" << static_cast<char>(i) << "'\n";
 	else
 		std::cout << "char:\tNon displayable\n";
+	std::cout.precision(0);
 	std::cout << "int:\t" << i << "\n";
 	std::cout << std::fixed << "float:\t" << static_cast<float>(i) << ".0f\n";
 	std::cout << std::fixed << "double:\t" << static_cast<double>(i) << ".0" << std::endl;
@@ -99,6 +101,7 @@ static void convertFromFloat( float f ) {
 		std::cout << "char:\t'" << static_cast<char>(f) << "'\n";
 	else
 		std::cout << "char:\tNon displayable\n";
+	std::cout.precision(1);
 	if (f >= std::numeric_limits<int>::min() && f <= std::numeric_limits<int>::max())
 		std::cout << "int:\t" << static_cast<int>(f) << "\n";
 		else
@@ -114,6 +117,7 @@ static void convertFromDouble( double d ) {
 		std::cout << "char:\t'" << static_cast<char>(d) << "'\n";
 	else
 		std::cout << "char:\tNon displayable\n";
+	std::cout.precision(1);
 	if (d >= std::numeric_limits<int>::min() && d <= std::numeric_limits<int>::max())
 		std::cout << "int:\t" << static_cast<int>(d) << "\n";
 	else
